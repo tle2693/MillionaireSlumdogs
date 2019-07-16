@@ -13,19 +13,29 @@
 </head>
 
 <body>
-	<h1> Who Wants To Be the Millionaire? </h1>
-	<div>
-		<p>Welcome to "Who Wants To Be the Millionaire?" where knowledge equals money</p>
-		<p>The rule is simple: each question has a value of an amount of money, choose the right answer and you win that money.<br>
-			If you choose to move forward, you have a chance to win a bigger prize if you answer the next question correctly<br>
-			Answer it wrong and you will lose all of what you have won. </p>
-		<p>If you are ready, go ahead and register in the form below </p>
+	<div class="container">
+		<div id="leftpanel">
+			<img src="img/Shrinks_and_grows.gif"> 
+		</div>
+		
+		<div id="text">
+			<h1> Who Wants To Be the Millionaire? </h1>
+			<p>Welcome to "Who Wants To Be the Millionaire?" where knowledge equals money.</p>
+			<p>The rule is simple: each question has a value of an amount of money, choose the right answer and <span style="font-weight: bold; color: #f5810c">you win that money. </span><br>
+				If you choose to move forward, you have a chance to win a bigger prize if you answer the next question correctly<br>
+				Answer it wrong and <span style="font-weight: bolder; color: #f5810c">you will lose all of what you have won.</span> </p>
+			<p>If you are ready, go ahead and register in the form below! The game will start after you finish register.</p>
+			<form method="post" action="" onsubmit=""> 
+				Username: <input type="text" name="user"><br><br>
+				Password:  <input type="text" name="password"><br><br>
+				<input type="submit" value="Register!" name="submit">
+			</form>
+		</div>
+
+		<div id="rightpanel"> 
+			<img src="img/Shrinks_and_grows.gif"> 	
+		</div>
 	</div>
-	<form> 
-			Username:<input type="text" name="user"><br>
-			Password:<input type="text" name="password"><br>
-			<input type="submit" value="Register!" name="submit">
-	</form>
   	<script src="js/scripts.js"></script>
 </body>
 </html>
