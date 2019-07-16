@@ -26,11 +26,12 @@ var ansText3 = document.querySelector(".answer-text-3");
 
 var ansVal4 = document.querySelector(".answer-value-4");
 var ansText4 = document.querySelector(".answer-text-4");
+
+let loseContainer = document.querySelector("#lose");
+let winContainer = document.querySelector("#win");
 /**end list of nodes */
 
-ansVal1.value = "dasj";
-ansText1.innerHTML = "wesa";
-
+/**update questions */
 let updateQuestion = function () {
     question.innerHTML= Q;
 
@@ -47,7 +48,34 @@ let updateQuestion = function () {
     ansText4.innerHTML = A4;
 }
 
+/**when win */
+let winAction = function () {
+    winContainer.style.display = "block";
+}
 
-STATE === "NEWQ" && updateQuestion(); //shor hand
+/** when lose */
+let loseAction = function () {
+    loseContainer.style.display = "block";
+}
 
-console.log("through");
+
+/**cases
+ * fron back to front:
+
+    +update questions --done
+    +update result
+     - when wrong: 
+        display wrong
+     - when right:
+        display righ
+    +update point list
+        display what to be done
+ */
+
+
+/*list of what finction to run based on state*/
+STATE === "CORRECT" && winAction();
+STATE === "INCORRECT" && loseAction();
+STATE === "NEWQ" && updateQuestion(); //when new questions pops up
+
+console.log("test: code ran through");

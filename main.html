@@ -7,8 +7,9 @@
   	<title>Who Wants To Be the Millionaire?</title>
   	<meta name="description" content="Main Stage">
   	<meta name="author" content="MillionaireSlumdogs">
-
-  	<link rel="stylesheet" href="main-style.css">
+	
+	<link rel="stylesheet" href="css/dev.css">
+	<link rel="stylesheet" href="main-style.css">
 
 </head>
 
@@ -20,6 +21,20 @@
 	</div>
 	<div id="lose">
 	</div>
+	<form action="php/outDebug.php" class="take-money">
+		<label class="take-money">
+			<input type="radio" checked="checked" name="radio" class="answer-value-1" value="">
+			<span class="custom answer-text-1"></span>
+		</label>
+		<input type="submit" value="Submit">
+	</form>
+	<form action="php/outDebug.php" class="keep-playing">
+		<label class="keep-playing">
+			<input type="radio" checked="checked" name="radio" class="answer-value-1" value="">
+			<span class="custom answer-text-1"></span>
+		</label>
+		<input type="submit" value="Submit">
+	</form>
 	<div id="quizcontent">
 		<div id="question" class="question"> </div>
 		<form method="post" action="php/outDebug.php" onsubmit="">
