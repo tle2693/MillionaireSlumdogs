@@ -18,14 +18,16 @@
 	<div id="progress"> </div>
 	<div id="leaderboard"> </div>
 	<div id="win">
-	</div>
-	<div id="lose">
-	</div>
 	<form action="php/outDebug.php" class="take-money">
-		<label class="take-money">
+		<!--<label class="take-money">
 			<input type="radio" checked="checked" name="radio" class="answer-value-1" value="">
-			<span class="custom answer-text-1"></span>
-		</label>
+			<span class="custom answer-text-1"></span>-->
+			
+			<!We can use regular button instead of radio button here>
+			<input type="button" name="continue" value="Keep Playing!"> <!Something like this>
+			<input type="button" name="takeMoney" value="Take the Money!">
+		<!Only need 1 form for the win div>	
+		<!--</label>
 		<input type="submit" value="Submit">
 	</form>
 	<form action="php/outDebug.php" class="keep-playing">
@@ -33,31 +35,34 @@
 			<input type="radio" checked="checked" name="radio" class="answer-value-1" value="">
 			<span class="custom answer-text-1"></span>
 		</label>
-		<input type="submit" value="Submit">
+		<input type="submit" value="Submit">-->
 	</form>
+	
+	</div>
+	<div id="lose">
+	</div>
 	<div id="quizcontent">
 		<div id="question" class="question"> </div>
 		<form method="post" action="php/outDebug.php" onsubmit="">
-			<label id="a1">
+			<label id="a1">Just a test <!The answer goes here, from php(I think), I can adjust the position of the text after the code works>
 				<input type="radio" checked="checked" name="radio" class="answer-value-1" value="">
 				<span class="custom answer-text-1"></span>
-			</label>
+			</label><br>
 			<label id="a2">
 				<input type="radio" checked="checked" name="radio" class="answer-value-2" value="">
 				<span class="custom answer-text-2"></span>
-			</label>
+			</label><br>
 			<label id="a3">
 				<input type="radio" checked="checked" name="radio" class="answer-value-3" value="">
 				<span class="custom answer-text-3"></span>
-			</label>
+			</label><br>
 			<label id="a4">
 				<input type="radio" checked="checked" name="radio" class="answer-value-4" value="">
 				<span class="custom answer-text-4"></span>
-			</label>
+			</label><br>
 			<input type="submit" value="Submit">
 		</form>
 	</div>
-  	<script src="js/scripts.js"></script>
   	<script src="js/main.js"></script>
 </body>
 </html>
