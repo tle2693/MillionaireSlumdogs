@@ -1,3 +1,51 @@
 body {
 	text-align: center;
+	color: #d0e210;
+	background-image: url("img/background.jpg");
+}
+
+h1 {
+	color: #5eca2c;
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 	3em;
+}
+
+.container {
+	width: 100%;
+	padding-top: 5%;
+}
+
+#leftpanel {
+	float: left;
+	width: 20%;
+}
+
+#text {
+	float: left;
+	width: 60%;
+	font-size: large;
+}
+
+#rightpanel {
+	float: left;
+	width: 20%;
+}
+
+img {
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+input[type="submit"] {
+	-webkit-appearance: none;
+	height: 50px;
+	width: 100px;
+	font-size: larger;
+	color: #0ba418;
+	font-family: serif;
+	text-align: center;
+	border-radius: 5px;
 }
