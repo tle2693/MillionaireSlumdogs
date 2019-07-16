@@ -13,3 +13,20 @@ body {
 }
 
 /*play board*/
+.playboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.question {
+    width: 100%;
+    margin: 1em;
+}
+
+.answer {
+    margin: 1em;
+    width: calc((100% - 8px - 8em)/4);
+}
+
+.
