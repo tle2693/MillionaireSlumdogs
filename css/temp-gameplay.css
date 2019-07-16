@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.money-or-play {
+    width: 100%;
+    display: flex;
+}
+
+.money, .play {
+    width: 50%;
+}
+
+/*play board*/
