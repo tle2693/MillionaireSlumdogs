@@ -1,0 +1,17 @@
+http://codd.cs.gsu.edu/~atran43/web/projects/MillionaireSlumdogs/main.html
+
+from backend to fronent:
+
+
+
+function:
+
+
+front to back:
+none
+
+fron back to front:
+
++update questions
++update result
++update point list
